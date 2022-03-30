@@ -11,6 +11,7 @@ import { AdminDashboardCardComponent } from './admin-dashboard/admin-dashboard-c
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { AdminParameterComponent } from './admin-parameter/admin-parameter.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatCardModule} from '@angular/material/card';
     AdminDashboardComponent,
     AdminDashboardCardsComponent,
     AdminDashboardAddCardComponent,
-    AdminDashboardCardComponent
+    AdminDashboardCardComponent,
+    AdminParameterComponent
   ],
   imports: [
     BrowserModule,
