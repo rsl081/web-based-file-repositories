@@ -6,7 +6,9 @@ import { AdminLevelsComponent } from './home/admin-dashboard/admin-levels/admin-
 import { AdminLevelComponent } from './home/admin-dashboard/admin-levels/admin-level/admin-level.component';
 import { AdminDashboardAddCardComponent } from './shared/admin-dashboard-add-card/admin-dashboard-add-card.component';
 import { AdminDashboardCardComponent } from './shared/admin-dashboard-card/admin-dashboard-card.component';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 import { AdminParameterComponent } from './admin-parameter/admin-parameter.component';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +17,11 @@ import { AdminParameterComponent } from './admin-parameter/admin-parameter.compo
     AdminLevelsComponent,
     AdminLevelComponent,
     AdminDashboardAddCardComponent,
+    AdminDashboardCardComponent
+  ],
+  imports: [
+    CommonModule,
+    BreadcrumbModule
     AdminDashboardCardComponent,
     AdminParameterComponent
   ],
