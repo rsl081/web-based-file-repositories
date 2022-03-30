@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-level-card',
-  templateUrl: './admin-level-card.component.html',
-  styleUrls: ['./admin-level-card.component.css']
+  selector: 'app-admin-level',
+  templateUrl: './admin-level.component.html',
+  styleUrls: ['./admin-level.component.css']
 })
-export class AdminLevelCardComponent implements OnInit {
+export class AdminLevelComponent implements OnInit {
 
   @Input('element') level!: { type: string; cardLabel: string; btnLabel: string; };
 

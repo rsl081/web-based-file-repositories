@@ -1,0 +1,10 @@
+<!-- container of levels -->
+<div
+  class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 m-3 px-3"
+>
+  <app-admin-dashboard-add-card></app-admin-dashboard-add-card>
+  <app-admin-level
+    *ngFor="let level of levels"
+    [element]="level"
+  ></app-admin-level>
+</div>
