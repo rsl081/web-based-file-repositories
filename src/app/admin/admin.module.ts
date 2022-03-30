@@ -6,8 +6,7 @@ import { AdminLevelsComponent } from './home/admin-dashboard/admin-levels/admin-
 import { AdminLevelComponent } from './home/admin-dashboard/admin-levels/admin-level/admin-level.component';
 import { AdminDashboardAddCardComponent } from './shared/admin-dashboard-add-card/admin-dashboard-add-card.component';
 import { AdminDashboardCardComponent } from './shared/admin-dashboard-card/admin-dashboard-card.component';
-
-
+import { AdminParameterComponent } from './admin-parameter/admin-parameter.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +15,18 @@ import { AdminDashboardCardComponent } from './shared/admin-dashboard-card/admin
     AdminLevelsComponent,
     AdminLevelComponent,
     AdminDashboardAddCardComponent,
-    AdminDashboardCardComponent
+    AdminDashboardCardComponent,
+    AdminParameterComponent
   ],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [
-    HomeComponent
-  ]
+    HomeComponent,
+    AdminDashboardComponent,
+    AdminLevelsComponent,
+    AdminLevelComponent,
+    AdminDashboardAddCardComponent,
+    AdminDashboardCardComponent,
+    AdminParameterComponent
+  ],
 })
-export class AdminModule { }
+export class AdminModule {}
