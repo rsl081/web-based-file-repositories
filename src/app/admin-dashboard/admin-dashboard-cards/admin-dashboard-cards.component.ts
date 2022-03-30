@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AdminDashboardCardsComponent implements OnInit {
 
   // dummy data only - might be changed once the backend is ready
-  route = "level";
-  cards = [
+  levelCards = [
     {
       type: "level",
       cardLabel: "Level 1 - Phase 4",
