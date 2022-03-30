@@ -1,5 +1,20 @@
 <!-- main container of admin dashboard -->
-<div class="container mx-auto border border-sky-600 my-3">
-  <!-- breadcrumb navigation goes here -->
+<div class="container mx-auto border border-gray-500 my-3">
+  <!-- breadcrumb container -->
+  <div class="bg-gray-200 p-3">
+    <!-- breadcrumb navigation  -->
+    <xng-breadcrumb [separator]="iconTemplate"></xng-breadcrumb>
+    <ng-template #iconTemplate>
+      <svg
+        class="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </ng-template>
+  </div>
   <app-admin-levels></app-admin-levels>
 </div>
