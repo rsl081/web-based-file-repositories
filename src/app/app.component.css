@@ -1,0 +1,35 @@
+.card-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 120px;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+.card-div > mat-card {
+  width: 200px;
+}
+
+.card {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+}
+.shadow-2xl {
+  border: 1px solid #38bdf8;
+  border-radius: 2rem;
+  margin-left: 15px;
+
+}
+.pic-icon {
+  width: 45px;
+  height: 60px;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 1px 2px 1px -1px rgb(167, 167, 167),
+              1px 3px 1px 0 rgba(167, 167, 167),
+              1px 3px 3px 0 rgba(167, 167, 167);
+}
