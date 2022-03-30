@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-admin-dashboard-cards',
-  templateUrl: './admin-dashboard-cards.component.html',
-  styleUrls: ['./admin-dashboard-cards.component.css']
+  selector: 'app-admin-levels',
+  templateUrl: './admin-levels.component.html',
+  styleUrls: ['./admin-levels.component.css']
 })
-export class AdminDashboardCardsComponent implements OnInit {
+export class AdminLevelsComponent implements OnInit {
 
   // dummy data only - might be changed once the backend is ready
-  levelCards = [
+  levels = [
     {
       type: "level",
       cardLabel: "Level 1 - Phase 4",
