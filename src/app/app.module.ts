@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminDashboardCardsComponent } from './admin-dashboard/admin-dashboard-cards/admin-dashboard-cards.component';
-import { AdminDashboardAddCardComponent } from './admin-dashboard/admin-dashboard-cards/admin-dashboard-add-card/admin-dashboard-add-card.component';
-import { AdminDashboardCardComponent } from './admin-dashboard/admin-dashboard-cards/admin-dashboard-card/admin-dashboard-card.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { AdminLevelCardComponent } from './admin-dashboard/admin-dashboard-cards/admin-level-card/admin-level-card.component';
+import { AdminDashboardCardComponent } from './shared/admin-dashboard-card/admin-dashboard-card.component';
+import { AdminDashboardAddCardComponent } from './shared/admin-dashboard-add-card/admin-dashboard-add-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatCardModule} from '@angular/material/card';
     AdminDashboardComponent,
     AdminDashboardCardsComponent,
     AdminDashboardAddCardComponent,
-    AdminDashboardCardComponent
+    AdminDashboardCardComponent,
+    AdminLevelCardComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AdminDashboardCardComponent implements OnInit {
 
-   @Input('element') card!: { type: string; cardLabel: string; btnLabel: string; };
+  // receiving card property from parent element admin-level-card
+  @Input() card!: { type: string; cardLabel: string; btnLabel: string; };
   
   constructor() { }
 
