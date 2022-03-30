@@ -1,0 +1,81 @@
+<!-- Background Image From Pixabay -->
+<div
+  class="bg-cover bg-center relative overflow-hidden"
+  style="
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg);
+  "
+>
+  <!-- BG Linear Gradient -->
+  <div
+    class="bg-gradient absolute w-full h-full z-40 opacity-60"
+  ></div>
+  <!-- <div
+    class="bg-gradient-to-r from-sky-500 to-indigo-500 absolute w-full h-full z-40 opacity-60"
+  ></div> -->
+
+  <div class="w-full h-full absolute z-40">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+  </div>
+
+  <!-- Container Center -->
+  <div class="relative z-50 flex items-center justify-center h-screen">
+    <div
+      class="w-1/2 h-auto bg-sky-900 text-white rounded-lg border border-sky-700 shadow-lg p-10"
+    >
+      <!-- Login Titles -->
+      <div
+        class="cursor-pointer flex justify-center gap-4 text-center text-2xl"
+      >
+        <button
+          *ngFor="let title of titles"
+          class="uppercase basis-1/2 bg-sky-900 hover:bg-sky-700 font-bold rounded-lg p-4 active:bg-sky-800"
+          [ngClass]="{ 'bg-sky-700': title.active }"
+          (click)="toggleBtn(title.user)"
+          (focus)="setActiveTabToFalse()"
+        >
+          {{ title.user }}
+        </button>
+      </div>
+
+      <!-- Form For Email And Password-->
+      <div
+        class="flex flex-col gap-4 pt-2"
+        [ngClass]="{ 'animate-pulse-once': getActiveTab() }"
+      >
+        <div class="p-4">
+          <form action="">
+            <label class="font-mono text-2xl">Email</label><br />
+            <input
+              [(ngModel)]="credentials.email"
+              required
+              type="email"
+              name="email"
+              placeholder="Enter Email"
+              class="mb-5 focus:border-indigo-400 focus:outline-none focus:shadow-outline border mt-2 w-full h-10 bg-sky-900 p-5 placeholder:text-sky-500"
+              pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+            />
+            <label class="font-mono text-2xl">Password</label><br />
+            <input
+              [(ngModel)]="credentials.password"
+              required
+              type="password"
+              name="password"
+              placeholder="Enter Password"
+              class="focus:border-indigo-400 focus:outline-none focus:shadow-outline border mt-2 w-full h-10 bg-sky-900 p-5 placeholder:text-sky-500"
+            />
+          </form>
+        </div>
+        <button
+          type="submit"
+          class="font-mono active:bg-sky-700 w-full text-3xl bg-indigo-400 text-white py-1.5 px-3 rounded-full hover:bg-indigo-500"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
