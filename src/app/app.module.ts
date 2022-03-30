@@ -6,15 +6,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminDashboardCardsComponent } from './admin-dashboard/admin-dashboard-cards/admin-dashboard-cards.component';
+import { AdminDashboardAddCardComponent } from './admin-dashboard/admin-dashboard-cards/admin-dashboard-add-card/admin-dashboard-add-card.component';
+import { AdminDashboardCardComponent } from './admin-dashboard/admin-dashboard-cards/admin-dashboard-card/admin-dashboard-card.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminDashboardComponent,
+    AdminDashboardCardsComponent,
+    AdminDashboardAddCardComponent,
+    AdminDashboardCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AdminModule,
-    UserModule
+    UserModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
