@@ -28,6 +28,36 @@ export class AdminLevelsComponent implements OnInit {
       type: "level",
       cardLabel: "Level 4 - Phase 4",
       btnLabel : "View Area"
+    },
+    {
+      type: "level",
+      cardLabel: "Level 5 - Phase 4",
+      btnLabel : "View Area"
+    },
+    {
+      type: "level",
+      cardLabel: "Level 6 - Phase 4",
+      btnLabel : "View Area"
+    },
+    {
+      type: "level",
+      cardLabel: "Level 7 - Phase 4",
+      btnLabel : "View Area"
+    },
+     {
+      type: "level",
+      cardLabel: "Level 8 - Phase 4",
+      btnLabel : "View Area"
+    },
+    {
+      type: "level",
+      cardLabel: "Level 9 - Phase 4",
+      btnLabel : "View Area"
+    },
+    {
+      type: "level",
+      cardLabel: "Level 10 - Phase 4",
+      btnLabel : "View Area"
     }
   ]
   
