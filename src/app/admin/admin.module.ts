@@ -8,6 +8,9 @@ import { AdminDashboardAddCardComponent } from './shared/admin-dashboard-add-car
 import { AdminDashboardCardComponent } from './shared/admin-dashboard-card/admin-dashboard-card.component';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { AdminParameterComponent } from './admin-parameter/admin-parameter.component';
+import { AdminFilesComponent } from './admin-files/admin-files.component';
+import { AdminFileTableComponent } from './admin-files/admin-file-table/admin-file-table.component';
+import { AdminFileSearchBarComponent } from './admin-files/admin-file-search-bar/admin-file-search-bar.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { AdminParameterComponent } from './admin-parameter/admin-parameter.compo
     AdminLevelComponent,
     AdminDashboardAddCardComponent,
     AdminDashboardCardComponent,
-    AdminParameterComponent
+    AdminParameterComponent,
+    AdminFilesComponent,
+    AdminFileTableComponent,
+    AdminFileSearchBarComponent
   ],
   imports: [
     CommonModule,
