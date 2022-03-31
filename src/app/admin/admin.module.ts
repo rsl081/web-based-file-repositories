@@ -17,23 +17,15 @@ import { AdminParameterComponent } from './admin-parameter/admin-parameter.compo
     AdminLevelsComponent,
     AdminLevelComponent,
     AdminDashboardAddCardComponent,
-    AdminDashboardCardComponent
+    AdminDashboardCardComponent,
+    AdminParameterComponent
   ],
   imports: [
     CommonModule,
-    BreadcrumbModule
-    AdminDashboardCardComponent,
-    AdminParameterComponent
+    BreadcrumbModule,
   ],
-  imports: [CommonModule],
   exports: [
-    HomeComponent,
-    AdminDashboardComponent,
-    AdminLevelsComponent,
-    AdminLevelComponent,
-    AdminDashboardAddCardComponent,
-    AdminDashboardCardComponent,
-    AdminParameterComponent
+    HomeComponent
   ],
 })
 export class AdminModule {}
