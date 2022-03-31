@@ -7,10 +7,16 @@
     <title>Document</title>
   </head>
   <body>
+
+    <!-- Navigation Bar -->
+    <div class=" bg-sky-900 h-auto px-4 py-4">
+        <h1 class="text-white text-right text-4xl font-bold p-3">Hi, Admin </h1>
+    </div>
+
     <div class="h-screen relative flex gap-3 pr-3">
       <!-- sidenav -->
       <nav class="relative w-64 bg-sky-900 text-white h-screen">
-        <div class="flex items-center justify-center mt-12">
+        <div class="flex items-center justify-center ">
           <img class="h-32 w-32 rounded-full" src="assets/user1.png" alt="" />
         </div>
         <p class="font-semibold text-center mt-5 text-2xl">Admin</p>
@@ -59,10 +65,31 @@
       </nav>
       <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min">
         <!-- 3 cards goes here -->
+        <div class="grid lg:grid-cols-3 m-8 ">
+            <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3 rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
+              <img src="assets/img/man-icon-card.png"
+                  class="w-18  h-14 lg:w-1/4 ml-1 mt-5 rounded-full">
+                  <h2 class="mb-2 text-2xl font-bold text-black text-center">Admin</h2>
+                  <p class="mb-2 text-2xl font-bold text-black text-center">3</p>
+                </div>
+                <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3  rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
+                  <img src="assets/img/man-icon-card.png"
+                  class="w-18  h-14 lg:w-1/4 ml-1 mt-5 rounded-full">
+                      <h2 class="mb-2 text-2xl font-bold text-black text-center ml-2">accreditor</h2>
+                      <p class="mb-2 text-2xl font-bold text-black text-center">3</p>
+          </div>
+          <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3  rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
+            <img src="assets/img/man-icon-card.png"
+                   class="w-18  h-14 lg:w-1/4 ml-1 mt-5 rounded-full">
+                <h2 class="mb-2 text-2xl font-bold text-black text-center ml-2">Total Files</h2>
+                <p class="mb-4 text-2xl font-bold text-black text-center ">3</p>
+            </div>
+          </div>
         <app-admin-dashboard></app-admin-dashboard>
         <!-- for testing only - it should not be here -->
         <app-admin-files></app-admin-files>
       </main>
     </div>
+
   </body>
 </html>
