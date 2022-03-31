@@ -56,10 +56,31 @@
           </button>
         </div>
       </nav>
-      <main class="flex-1 grid grid-cols-1 gap-3">
-        <!-- 3 cards goes here -->
+
+      <main>
+        <div class="grid lg:grid-cols-3 m-8 ">
+            <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3 rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
+              <img src="assets/img/man-icon-card.png"
+                  class="w-18  h-14 lg:w-1/4 ml-1 mt-5 rounded-full">
+                  <h2 class="mb-2 text-2xl font-bold text-black text-center">Admin</h2>
+                  <p class="mb-2 text-2xl font-bold text-black text-center">3</p>
+                </div>
+                <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3  rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
+                  <img src="assets/img/man-icon-card.png"
+                  class="w-18  h-14 lg:w-1/4 ml-1 mt-5 rounded-full">
+                      <h2 class="mb-2 text-2xl font-bold text-black text-center ml-2">accreditor</h2>
+                      <p class="mb-2 text-2xl font-bold text-black text-center">3</p>
+          </div>
+          <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3  rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
+            <img src="assets/img/man-icon-card.png"
+                   class="w-18  h-14 lg:w-1/4 ml-1 mt-5 rounded-full">
+                <h2 class="mb-2 text-2xl font-bold text-black text-center ml-2">Total Files</h2>
+                <p class="mb-4 text-2xl font-bold text-black text-center ">3</p>
+            </div>
+          </div>
         <app-admin-dashboard></app-admin-dashboard>
       </main>
     </div>
+
   </body>
 </html>
