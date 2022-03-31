@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="h-screen relative flex gap-3 pr-3">
+      <!-- sidenav -->
       <nav class="relative w-64 bg-sky-900 text-white h-screen">
         <div class="flex items-center justify-center mt-12">
           <img class="h-32 w-32 rounded-full" src="assets/user1.png" alt="" />
@@ -56,9 +57,11 @@
           </button>
         </div>
       </nav>
-      <main class="flex-1 grid grid-cols-1 gap-3">
+      <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min">
         <!-- 3 cards goes here -->
         <app-admin-dashboard></app-admin-dashboard>
+        <!-- for testing only - it should not be here -->
+        <app-admin-files></app-admin-files>
       </main>
     </div>
   </body>
