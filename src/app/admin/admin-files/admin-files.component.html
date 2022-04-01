@@ -1,0 +1,29 @@
+<!-- admin file main container -->
+<div class="flex flex-col w-full items-center gap-8">
+  <h1 class="text-2xl font-bold text-gray-600">{{ parameterName }}</h1>
+  <!-- button container -->
+  <div class="flex gap-4">
+    <button
+      class="w-36 rounded-full relative overflow-hidden inline-flex group items-center justify-center bg-sky-800 text-white p-2 active:shadow-none shadow-lg"
+    >
+      <!-- hover effect -->
+      <span
+        class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"
+      ></span>
+      <span class="relative">Print Table</span>
+    </button>
+    <button
+      class="w-36 rounded-full relative overflow-hidden inline-flex group items-center justify-center bg-sky-800 text-white p-2 active:shadow-none shadow-lg"
+    >
+      <!-- hover effect -->
+      <span
+        class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-36 group-hover:h-36 opacity-10"
+      ></span>
+      <span class="relative">Print File</span>
+    </button>
+  </div>
+  <!-- search bar -->
+  <app-admin-file-search-bar></app-admin-file-search-bar>
+  <!-- passing files array property to child element app-admin-file-table -->
+  <app-admin-file-table [files]="fileArray"></app-admin-file-table>
+</div>

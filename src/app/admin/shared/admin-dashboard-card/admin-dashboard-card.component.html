@@ -1,0 +1,28 @@
+<!-- cards such as level, area, and parameter can reuse this component -->
+<div
+  class="flex flex-col border items-center border-gray-400 rounded-lg p-3 gap-1 hover:bg-gray-100"
+>
+  <!-- close icon -->
+  <svg
+    class="h-5 w-5 place-self-end fill-gray-600 cursor-pointer"
+    viewBox="0 0 20 20"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+      clip-rule="evenodd"
+    />
+  </svg>
+  <h2 class="text-xl font-bold text-center text-gray-600">
+    {{ card.cardLabel }}
+  </h2>
+  <button
+    class="w-full max-w-xs rounded-full relative overflow-hidden inline-flex group items-center justify-center mt-4 bg-sky-800 text-white px-3.5 py-2 active:shadow-none shadow-lg"
+  >
+    <!-- hover effect -->
+    <span
+      class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-80 group-hover:h-80 lg:group-hover:w-56 lg:group-hover:h-56 xl:group-hover:w-80 xl:group-hover:h-80 opacity-10"
+    ></span>
+    <span class="relative">{{ card.btnLabel }}</span>
+  </button>
+</div>
