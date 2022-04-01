@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminFilesComponent } from './admin-files.component';
+import { AdminChangePassComponent } from './admin-change-pass.component';
 
-describe('AdminFilesComponent', () => {
-  let component: AdminFilesComponent;
-  let fixture: ComponentFixture<AdminFilesComponent>;
+describe('AdminChangePassComponent', () => {
+  let component: AdminChangePassComponent;
+  let fixture: ComponentFixture<AdminChangePassComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdminFilesComponent ]
+      declarations: [ AdminChangePassComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminFilesComponent);
+    fixture = TestBed.createComponent(AdminChangePassComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
