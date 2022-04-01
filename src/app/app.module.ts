@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
