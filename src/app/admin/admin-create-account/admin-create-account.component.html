@@ -1,1 +1,136 @@
-<p>admin-create-account works!</p>
+<!-- Container Center -->
+<div class="relative z-50 flex items-center justify-center h-full">
+  <div
+    class="mt-11 w-1/2 h-auto bg-sky-900 text-white rounded-lg border border-sky-700 shadow-lg p-10"
+  >
+    <!-- ChangePassword Titles -->
+    <div class="cursor-pointer flex justify-center gap-4 text-center text-2xl">
+      <p>Create Account</p>
+    </div>
+
+    <!-- Form -->
+    <div class="flex flex-col gap-4 pt-2">
+      <div class="p-4">
+        <form action="">
+          <label class="font-mono text-2xl">Profile Picture</label><br />
+          <input
+            required
+            type="file"
+            name="file"
+            class="mb-5"
+          />
+          <br>
+          <label class="font-mono text-2xl">Name</label><br />
+          <input
+            required
+            type="fname"
+            name="fname"
+            placeholder="Enter First Name"
+            class="mb-5 focus:border-indigo-400 focus:outline-none focus:shadow-outline border mt-2 w-full h-10 bg-sky-900 p-5 placeholder:text-sky-500"
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+          />
+          <label class="font-mono text-2xl">Username</label><br />
+          <input
+            required
+            type="username"
+            name="username"
+            placeholder="Enter Username"
+            class="mb-5 focus:border-indigo-400 focus:outline-none focus:shadow-outline border mt-2 w-full h-10 bg-sky-900 p-5 placeholder:text-sky-500"
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+          />
+          <label class="font-mono text-2xl">Password</label><br />
+          <input
+            required
+            type="password"
+            name="password"
+            placeholder="Enter Username"
+            class="mb-5 focus:border-indigo-400 focus:outline-none focus:shadow-outline border mt-2 w-full h-10 bg-sky-900 p-5 placeholder:text-sky-500"
+            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+          />
+          <label class="font-mono text-2xl">User Type</label><br />
+          <!-- This example requires Tailwind CSS v2.0+ -->
+          <div class="relative inline-block text-left">
+            <div>
+              <button
+                type="button"
+                class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                id="menu-button"
+                aria-expanded="true"
+                aria-haspopup="true"
+              >
+                Options
+                <!-- Heroicon name: solid/chevron-down -->
+                <svg
+                  class="-mr-1 ml-2 h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!--
+              Dropdown menu, show/hide based on menu state.
+
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+            <div
+              class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1" role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a
+                  href="#"
+                  class="text-gray-700 block px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                  >Faculty</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  >Accreditor</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 block px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-2"
+                  >Admin</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <button
+        type="submit"
+        class="font-mono active:bg-sky-700 w-full text-3xl bg-indigo-400 text-white py-1.5 px-3 rounded-full hover:bg-indigo-500"
+      >
+        SUBMIT
+      </button>
+    </div>
+  </div>
+</div>
