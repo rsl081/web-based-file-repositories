@@ -9,12 +9,13 @@ import { AdminFileTableComponent } from './admin-files/admin-file-table/admin-fi
 import { AdminFileSearchBarComponent } from './admin-files/admin-file-search-bar/admin-file-search-bar.component';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
-import { AdminLevelsComponent } from './admin-home/admin-dashboard/admin-levels/admin-levels.component';
-import { AdminLevelComponent } from './admin-home/admin-dashboard/admin-levels/admin-level/admin-level.component';
-import { AdminDashboardComponent } from './admin-home/admin-dashboard/admin-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminLevelsComponent } from './admin-levels/admin-levels.component';
+import { AdminLevelComponent } from './admin-levels/admin-level/admin-level.component';
 import { AdminCreateAccountComponent } from './admin-create-account/admin-create-account.component';
 import { AdminChangePassComponent } from './admin-change-pass/admin-change-pass.component';
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
+
 
 @NgModule({
   declarations: [

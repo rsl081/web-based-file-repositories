@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminChangePassComponent } from './admin-change-pass/admin-change-pass.component';
 import { AdminCreateAccountComponent } from './admin-create-account/admin-create-account.component';
-import { AdminDashboardComponent } from './admin-home/admin-dashboard/admin-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
 
