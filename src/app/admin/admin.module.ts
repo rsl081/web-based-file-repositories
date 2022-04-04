@@ -15,6 +15,8 @@ import { AdminLevelComponent } from './admin-levels/admin-level/admin-level.comp
 import { AdminCreateAccountComponent } from './admin-create-account/admin-create-account.component';
 import { AdminChangePassComponent } from './admin-change-pass/admin-change-pass.component';
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
+import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.
     AdminHomeComponent,
     AdminCreateAccountComponent,
     AdminChangePassComponent,
-    AdminSummaryGenComponent
+    AdminSummaryGenComponent,
+    AdminSidebarComponent,
+    AdminNavComponent
   ],
   imports: [
     CommonModule,
