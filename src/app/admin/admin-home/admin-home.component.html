@@ -74,10 +74,12 @@
   </body>
 </html> -->
 
-<app-admin-nav></app-admin-nav>
-<div class="h-screen relative flex gap-3 pr-3">
-  <app-admin-sidebar></app-admin-sidebar>
-  <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min sm:ml-64">
-    <router-outlet></router-outlet>
-  </main>
+<div class="bg-gray-50 min-h-screen">
+  <app-admin-nav></app-admin-nav>
+  <div class="relative flex gap-3 pr-3">
+    <app-admin-sidebar></app-admin-sidebar>
+    <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min ml-64 z-0">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
 </div>
