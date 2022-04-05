@@ -5,6 +5,7 @@ import { AdminCreateAccountComponent } from './admin-create-account/admin-create
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
+import { AdminAreasComponent } from './admin-areas/admin-areas.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'create-account',
         component: AdminCreateAccountComponent,
+      },
+      {
+        path: 'area',
+        component: AdminAreasComponent,
       },
       {
         path: 'summary-gen',
