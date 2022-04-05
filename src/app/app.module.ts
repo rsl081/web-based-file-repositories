@@ -8,6 +8,7 @@ import { UserModule } from './user/user.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
+import { FacultyModule } from './faculty/faculty.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavComponent } from './nav/nav.component';
     AppRoutingModule,
     AdminModule,
     UserModule,
+    FacultyModule,
     BrowserAnimationsModule,
   ],
   providers: [],

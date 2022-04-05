@@ -13,7 +13,7 @@
     </div>
 
     <div class="h-screen relative flex gap-3 pr-3">
-    
+
       <nav class="relative w-64 bg-sky-900 text-white h-screen">
         <div class="flex items-center justify-center ">
           <img class="h-32 w-32 rounded-full" src="assets/user1.png" alt="" />
@@ -44,7 +44,7 @@
         </div>
       </nav>
       <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min">
-  
+
         <div class="grid lg:grid-cols-3 m-8 ">
             <div class= " ml-20 grid grid-rows-3 grid-flow-col gap-1 w-3/4 row-span-3 rounded-full shadow-xl w-1/2:flex h-24  outline outline-offset outline-cyan-200">
               <img src="assets/img/man-icon-card.png"
@@ -73,72 +73,15 @@
 
   </body>
 </html> -->
+<!-- admin dialog card-->
+<app-admin-dialog-card></app-admin-dialog-card>
 
-<!-- Navigation Bar -->
-<div class="bg-sky-900 h-auto px-4 py-4">
-  <h1 class="text-white text-right text-4xl font-bold p-3">Hi, Admin</h1>
-</div>
-
-<div class="h-screen relative flex gap-3 pr-3">
-  <!-- sidenav -->
-  <nav class="relative w-64 bg-sky-900 text-white h-screen">
-    <div class="flex items-center justify-center">
-      <img class="h-32 w-32 rounded-full" src="assets/user1.png" alt="" />
-    </div>
-    <p class="font-semibold text-center mt-5 text-2xl">Admin</p>
-    <div class="px-16 mt-6">
-      <hr style="border: 1px solid white" />
-    </div>
-    <ul class="mt-4 text-center text-2xl font-semibold px-3 py-4">
-      <li>
-        <a
-          routerLink="level"
-          routerLinkActive="bg-sky-700"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="block px-4 py-2 hover:bg-sky-700 focus:bg-sky-700 rounded-2xl"
-          >Dashboard</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="create-account"
-          routerLinkActive="bg-sky-700"
-          [routerLinkActiveOptions]="{ exact: true }" 
-          class="block px-4 py-2 hover:bg-sky-700 focus:bg-sky-700 rounded-2xl"
-          >Create Account</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="summary-gen"
-          routerLinkActive="bg-sky-700"
-          [routerLinkActiveOptions]="{ exact: true }" 
-          class="block px-4 py-2 hover:bg-sky-700 focus:bg-sky-700 rounded-2xl"
-          >Summary Gen</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="admin/change-pass"
-          routerLinkActive="bg-sky-700"
-          [routerLinkActiveOptions]="{ exact: true }" 
-          class="block px-4 py-2 hover:bg-sky-700 focus:bg-sky-700 rounded-2xl"
-          >Change Password</a
-        >
-      </li>
-    </ul>
-    <div class="flex items-center justify-center absolute inset-x-0 bottom-2">
-      <button
-        class="text-2xl px-4 py-2 hover:bg-sky-700 rounded-2xl font-semibold"
-      >
-        Logout
-      </button>
-    </div>
-  </nav>
-
-  <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min">
-
-    <router-outlet></router-outlet>
-
-  </main>
+<div class="bg-gray-50 min-h-screen">
+  <app-admin-nav></app-admin-nav>
+  <div class="relative flex gap-3 pr-3">
+    <app-admin-sidebar></app-admin-sidebar>
+    <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min ml-64 z-0">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
 </div>

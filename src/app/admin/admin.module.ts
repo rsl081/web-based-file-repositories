@@ -15,8 +15,14 @@ import { AdminLevelComponent } from './admin-levels/admin-level/admin-level.comp
 import { AdminCreateAccountComponent } from './admin-create-account/admin-create-account.component';
 import { AdminChangePassComponent } from './admin-change-pass/admin-change-pass.component';
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
+
 import { AdminAreaComponent } from './admin-areas/admin-area/admin-area.component';
 import { AdminAreasComponent } from './admin-areas/admin-areas.component';
+
+import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.component';
+
 
 
 @NgModule({
@@ -36,7 +42,11 @@ import { AdminAreasComponent } from './admin-areas/admin-areas.component';
     AdminChangePassComponent,
     AdminSummaryGenComponent,
     AdminAreaComponent,
-    AdminAreasComponent
+    AdminAreasComponent,
+    AdminSidebarComponent,
+    AdminNavComponent,
+    AdminDialogCardComponent
+
   ],
   imports: [
     CommonModule,
