@@ -17,6 +17,7 @@ import { AdminChangePassComponent } from './admin-change-pass/admin-change-pass.
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AdminNavComponent } from './admin-nav/admin-nav.component';
     AdminChangePassComponent,
     AdminSummaryGenComponent,
     AdminSidebarComponent,
-    AdminNavComponent
+    AdminNavComponent,
+    AdminDialogCardComponent
   ],
   imports: [
     CommonModule,
