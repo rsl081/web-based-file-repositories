@@ -1,6 +1,6 @@
 <!-- cards such as level, area, and parameter can reuse this component -->
 <div
-  class="flex flex-col border items-center border-gray-400 rounded-lg p-3 gap-1 hover:bg-gray-100"
+  class="flex flex-col border items-center border-gray-400 rounded-lg p-3 gap-1 hover:bg-gray-100 h-48"
 >
   <!-- close icon -->
   <svg
@@ -13,11 +13,12 @@
       clip-rule="evenodd"
     />
   </svg>
+  <div class="flex flex-1 flex-col justify-between">
   <h2 class="text-xl font-bold text-center text-gray-600">
     {{ card.cardLabel }}
   </h2>
   <button
-    class="w-full max-w-xs rounded-full relative overflow-hidden inline-flex group items-center justify-center mt-4 bg-sky-800 text-white px-3.5 py-2 active:shadow-none shadow-lg"
+    class="w-full max-w-xs rounded-full relative overflow-hidden inline-flex group items-center justify-center mt-4 bg-sky-800 text-white px-10 py-2 active:shadow-none shadow-lg"
   >
     <!-- hover effect -->
     <span
@@ -25,4 +26,5 @@
     ></span>
     <span class="relative">{{ card.btnLabel }}</span>
   </button>
+  </div>
 </div>
