@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ErrorAlertMessageComponent } from './error-alert-message/error-alert-message.component';
-import { DashboardCardComponentComponent } from './dashboard-card-component/dashboard-card-component.component';
-import { DashboardAddCardComponentComponent } from './dashboard-add-card-component/dashboard-add-card-component.component';
+import { DashboardAddCardComponent } from './dashboard-add-card/dashboard-add-card.component';
+import { DashboardCardComponent } from './dashboard-card-component/dashboard-card.component';
 
 
 @NgModule({
   declarations: [
     ErrorAlertMessageComponent,
-    DashboardCardComponentComponent,
-    DashboardAddCardComponentComponent
+    DashboardCardComponent,
+    DashboardAddCardComponent
   ],
   imports: [
     CommonModule,
   ],
   exports: [
     ErrorAlertMessageComponent,
-    DashboardAddCardComponentComponent,
-    DashboardCardComponentComponent
+    DashboardAddCardComponent,
+    DashboardCardComponent
   ]
 })
 export class SharedModule { }
