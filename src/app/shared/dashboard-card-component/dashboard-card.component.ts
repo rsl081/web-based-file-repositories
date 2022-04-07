@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard-card-component',
-  templateUrl: './dashboard-card-component.component.html',
-  styleUrls: ['./dashboard-card-component.component.css']
+  selector: 'app-dashboard-card',
+  templateUrl: './dashboard-card.component.html',
+  styleUrls: ['./dashboard-card.component.css']
 })
-export class DashboardCardComponentComponent implements OnInit {
+export class DashboardCardComponent implements OnInit {
 
     // receiving card property from parent element admin-level-card
   @Input() card!: { type: string; cardLabel: string; btnLabel: string; };
