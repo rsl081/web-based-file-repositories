@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdminDashboardAddCardComponent } from './shared/admin-dashboard-add-card/admin-dashboard-add-card.component';
-import { AdminDashboardCardComponent } from './shared/admin-dashboard-card/admin-dashboard-card.component';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { AdminParameterComponent } from './admin-parameter/admin-parameter.component';
 import { AdminFilesComponent } from './admin-files/admin-files.component';
@@ -22,6 +20,7 @@ import { AdminAreasComponent } from './admin-areas/admin-areas.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -31,8 +30,6 @@ import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.
     AdminDashboardComponent,
     AdminLevelsComponent,
     AdminLevelComponent,
-    AdminDashboardAddCardComponent,
-    AdminDashboardCardComponent,
     AdminParameterComponent,
     AdminFilesComponent,
     AdminFileTableComponent,
@@ -51,7 +48,8 @@ import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.
   imports: [
     CommonModule,
     BreadcrumbModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    SharedModule
   ],
   exports: [
     AdminHomeComponent
