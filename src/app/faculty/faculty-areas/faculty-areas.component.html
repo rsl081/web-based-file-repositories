@@ -1,0 +1,6 @@
+<!-- container of areas -->
+<div
+  class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 m-3 px-3"
+>
+  <app-faculty-area *ngFor="let area of areas" [element]="area"></app-faculty-area>
+</div>
