@@ -1,12 +1,12 @@
-<!-- container of levels -->
+<!-- container of parameters -->
 <div
-  *ngIf="areaOutlet.isActivated == false"
+  *ngIf="filesOutlet.isActivated == false"
   class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 p-3 auto-rows-[1fr]"
 >
   <app-dashboard-add-card></app-dashboard-add-card>
   <app-admin-level
-    *ngFor="let level of levels"
-    [element]="level"
+    *ngFor="let parameter of parameters"
+    [element]="parameter"
   ></app-admin-level>
 </div>
-<router-outlet #areaOutlet="outlet"></router-outlet>
+<router-outlet #filesOutlet="outlet"></router-outlet>

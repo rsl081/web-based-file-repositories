@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-admin-parameter',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminParameterComponent implements OnInit {
 
+  @Input('element') parameter!: { type: string; cardLabel: string; btnLabel: string; };
+  
   constructor() { }
 
   ngOnInit(): void {

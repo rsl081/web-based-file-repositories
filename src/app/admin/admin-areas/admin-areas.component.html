@@ -1,6 +1,8 @@
 <!-- container of areas -->
 <div
-  class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 m-3 px-3"
+  *ngIf="parameterOutlet.isActivated == false"
+  class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 m-3 p-3 auto-rows-[1fr]"
 >
   <app-admin-area *ngFor="let area of areas" [element]="area"></app-admin-area>
 </div>
+<router-outlet #parameterOutlet="outlet"></router-outlet>
