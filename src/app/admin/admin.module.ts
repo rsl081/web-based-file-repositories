@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BreadcrumbModule } from 'xng-breadcrumb';
-import { AdminParameterComponent } from './admin-parameter/admin-parameter.component';
+
+
 import { AdminFilesComponent } from './admin-files/admin-files.component';
 import { AdminFileTableComponent } from './admin-files/admin-file-table/admin-file-table.component';
 import { AdminFileSearchBarComponent } from './admin-files/admin-file-search-bar/admin-file-search-bar.component';
@@ -21,6 +22,8 @@ import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.component';
 import { SharedModule } from '../shared/shared.module';
+import { AdminParametersComponent } from './admin-parameters/admin-parameters.component';
+import { AdminParameterComponent } from './admin-parameters/admin-parameter/admin-parameter.component';
 
 
 
@@ -30,7 +33,6 @@ import { SharedModule } from '../shared/shared.module';
     AdminDashboardComponent,
     AdminLevelsComponent,
     AdminLevelComponent,
-    AdminParameterComponent,
     AdminFilesComponent,
     AdminFileTableComponent,
     AdminFileSearchBarComponent,
@@ -42,8 +44,9 @@ import { SharedModule } from '../shared/shared.module';
     AdminAreasComponent,
     AdminSidebarComponent,
     AdminNavComponent,
-    AdminDialogCardComponent
-
+    AdminDialogCardComponent,
+    AdminParametersComponent,
+    AdminParameterComponent
   ],
   imports: [
     CommonModule,

@@ -6,6 +6,10 @@ import { FacultyRestrictedFilesComponent } from './faculty-restricted-files/facu
 import { FacultyRestrictedFileTableComponent } from './faculty-restricted-files/faculty-restricted-file-table/faculty-restricted-file-table.component';
 import { FacultyRestrictedFileSearchBarComponent } from './faculty-restricted-files/faculty-restricted-file-search-bar/faculty-restricted-file-search-bar.component';
 import { SharedModule } from '../shared/shared.module';
+import { FacultyHomeComponent } from './faculty-home/faculty-home.component';
+import { FacultyEditProfileComponent } from './faculty-edit-profile/faculty-edit-profile.component';
+import { FacultySidebarComponent } from './faculty-sidebar/faculty-sidebar.component';
+import { FacultyNavComponent } from './faculty-nav/faculty-nav.component';
 import { FacultyAreasComponent } from './faculty-areas/faculty-areas.component';
 import { FacultyAreaComponent } from './faculty-areas/faculty-area/faculty-area.component';
 
@@ -15,6 +19,10 @@ import { FacultyAreaComponent } from './faculty-areas/faculty-area/faculty-area.
     FacultyRestrictedFilesComponent,
     FacultyRestrictedFileTableComponent,
     FacultyRestrictedFileSearchBarComponent,
+    FacultyHomeComponent,
+    FacultyEditProfileComponent,
+    FacultySidebarComponent,
+    FacultyNavComponent,
     FacultyAreasComponent,
     FacultyAreaComponent,
   ],

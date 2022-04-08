@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FacultyAreasComponent } from './faculty-areas/faculty-areas.component';
+import { FacultyEditProfileComponent } from './faculty-edit-profile/faculty-edit-profile.component';
+import { FacultyHomeComponent } from './faculty-home/faculty-home.component';
 
 const routes: Routes = [
   {
     path: 'faculty',
-    component: FacultyAreasComponent,
+    component: FacultyHomeComponent,
     children: [
       {
-        path: 'area',
-        component: FacultyAreasComponent,
+        path: '',
+        redirectTo: 'level',
+        pathMatch: 'full',
+      },
+      {
+        path: 'edit-profile',
+        component: FacultyEditProfileComponent,
       },
     ],
   },
