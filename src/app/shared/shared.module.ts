@@ -3,20 +3,25 @@ import { CommonModule } from '@angular/common';
 import { ErrorAlertMessageComponent } from './error-alert-message/error-alert-message.component';
 import { DashboardAddCardComponent } from './dashboard-add-card/dashboard-add-card.component';
 import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 
 @NgModule({
   declarations: [
     ErrorAlertMessageComponent,
     DashboardCardComponent,
-    DashboardAddCardComponent
+    DashboardAddCardComponent,
+    BreadcrumbComponent
   ],
   imports: [
     CommonModule,
+    BreadcrumbModule
   ],
   exports: [
     ErrorAlertMessageComponent,
     DashboardAddCardComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    BreadcrumbComponent
   ]
 })
 export class SharedModule { }
