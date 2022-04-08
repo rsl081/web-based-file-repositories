@@ -9,11 +9,13 @@ import { UserModule } from './user/user.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { FacultyModule } from './faculty/faculty.module';
+import { FacultyParameterComponent } from './faculty/faculty-parameter/faculty-parameter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
+    FacultyParameterComponent,
   ],
   imports: [
     BrowserModule,
