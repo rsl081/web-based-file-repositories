@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BreadcrumbModule } from 'xng-breadcrumb';
-
 
 import { AdminFilesComponent } from './admin-files/admin-files.component';
 import { AdminFileTableComponent } from './admin-files/admin-file-table/admin-file-table.component';
@@ -50,7 +48,6 @@ import { AdminParameterComponent } from './admin-parameters/admin-parameter/admi
   ],
   imports: [
     CommonModule,
-    BreadcrumbModule,
     AdminRoutingModule,
     SharedModule
   ],
