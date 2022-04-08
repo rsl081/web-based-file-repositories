@@ -6,6 +6,9 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.component';
 import { AdminAreasComponent } from './admin-areas/admin-areas.component';
+import { AdminLevelsComponent } from './admin-levels/admin-levels.component';
+import { AdminParametersComponent } from './admin-parameters/admin-parameters.component';
+import { AdminFilesComponent } from './admin-files/admin-files.component';
 
 const routes: Routes = [
   {
@@ -18,8 +21,32 @@ const routes: Routes = [
         pathMatch: 'full',
       },
       {
-        path: 'level',
+        path: '',
         component: AdminDashboardComponent,
+        children: [
+          {
+            path: 'level',
+            component: AdminLevelsComponent,
+            children: [
+              {
+                path: 'area',
+                component: AdminAreasComponent,
+                children: [
+                  {
+                    path: 'parameter',
+                    component: AdminParametersComponent,
+                    children: [
+                      {
+                        path: 'files',
+                        component: AdminFilesComponent
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         path: 'create-account',
@@ -39,18 +66,6 @@ const routes: Routes = [
       },
     ],
   },
-
-  //Jayson
-  // {
-  //   path: 'admin', redirectTo: '/admin/level',
-  //   pathMatch: 'full'
-  // },
-  // {
-  //   path: 'admin-dashboard',
-  //   component: AdminModule,
-  //   children: [{ path: 'level', component: AdminDashboardComponent }],
-  // },
-
 ];
 
 @NgModule({
