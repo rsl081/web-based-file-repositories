@@ -3,9 +3,10 @@
   *ngIf="parameterOutlet.isActivated == false"
   class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 m-3 p-3 auto-rows-[1fr]"
 >
-
+  <!-- Came from the shared folder -->
   <app-dashboard-add-card></app-dashboard-add-card>
 
+  <!-- Came from the shared folder -->
   <app-dashboard-card
     *ngFor="let area of areas; let i = index"
     [card]="area"
