@@ -9,8 +9,12 @@ import { SharedModule } from '../shared/shared.module';
 import { FacultyHomeComponent } from './faculty-home/faculty-home.component';
 import { FacultyEditProfileComponent } from './faculty-edit-profile/faculty-edit-profile.component';
 import { FacultySidebarComponent } from './faculty-sidebar/faculty-sidebar.component';
-import { FacultyNavComponent } from './faculty-nav/faculty-nav.component';
-
+import { FacultyDashboardComponent } from './faculty-dashboard/faculty-dashboard.component';
+import { FacultyAreasComponent } from './faculty-areas/faculty-areas.component';
+import { FacultyFilesComponent } from './faculty-files/faculty-files.component';
+import { FacultyFileSearchBarComponent } from './faculty-files/faculty-file-search-bar/faculty-file-search-bar.component';
+import { FacultyFileTableComponent } from './faculty-files/faculty-file-table/faculty-file-table.component';
+import { FacultyParametersComponent } from './faculty-parameters/faculty-parameters.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,12 @@ import { FacultyNavComponent } from './faculty-nav/faculty-nav.component';
     FacultyHomeComponent,
     FacultyEditProfileComponent,
     FacultySidebarComponent,
-    FacultyNavComponent,
+    FacultyDashboardComponent,
+    FacultyAreasComponent,
+    FacultyFilesComponent,
+    FacultyFileSearchBarComponent,
+    FacultyFileTableComponent,
+    FacultyParametersComponent,
   ],
   imports: [
     CommonModule,
