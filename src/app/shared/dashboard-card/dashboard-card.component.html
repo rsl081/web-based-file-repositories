@@ -6,6 +6,7 @@
   <svg
     class="h-5 w-5 place-self-end fill-gray-600 cursor-pointer"
     viewBox="0 0 20 20"
+    (click)="(onDeleteItem())"
   >
     <path
       fill-rule="evenodd"
@@ -13,6 +14,7 @@
       clip-rule="evenodd"
     />
   </svg>
+
   <div class="w-full flex flex-1 flex-col justify-between items-center">
     <h2 class="text-xl font-bold text-center text-gray-600">
       {{ card.cardLabel }}
