@@ -7,6 +7,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { NavComponent } from './nav/nav.component';
 import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
+import { DashboardDialogComponent } from './dashboard-dialog/dashboard-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.componen
     BreadcrumbComponent,
     NavComponent,
     HamburgerMenuComponent
+    DashboardDialogComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +29,9 @@ import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.componen
     DashboardAddCardComponent,
     DashboardCardComponent,
     BreadcrumbComponent,
-    NavComponent
+    NavComponent,
+    HamburgerMenuComponent,
+    DashboardDialogComponent,
   ]
 })
 export class SharedModule { }

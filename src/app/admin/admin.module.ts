@@ -15,7 +15,6 @@ import { AdminSummaryGenComponent } from './admin-summary-gen/admin-summary-gen.
 import { AdminAreasComponent } from './admin-areas/admin-areas.component';
 
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
-import { AdminDialogCardComponent } from './admin-dialog-card/admin-dialog-card.component';
 import { SharedModule } from '../shared/shared.module';
 import { AdminParametersComponent } from './admin-parameters/admin-parameters.component';
 import { NavigationService } from '../shared/navigation.service';
@@ -36,7 +35,6 @@ import { ViewportService } from '../shared/viewport.service';
     AdminSummaryGenComponent,
     AdminAreasComponent,
     AdminSidebarComponent,
-    AdminDialogCardComponent,
     AdminParametersComponent,
   ],
   imports: [
@@ -49,4 +47,5 @@ import { ViewportService } from '../shared/viewport.service';
     AdminHomeComponent
   ],
 })
+
 export class AdminModule {}
