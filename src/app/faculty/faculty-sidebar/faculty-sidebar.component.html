@@ -1,5 +1,7 @@
 <nav
-  class="w-64 fixed top-0 bottom-0 z-20 overflow-y-auto pt-[90px] bg-sky-900 text-white flex flex-col"
+  [@toggleNav]="stateName"
+  class="w-64 fixed top-24 bottom-0 -left-64 sm:left-0 z-20 overflow-y-auto bg-sky-900 text-white flex flex-col"
+  [ngClass]="{ 'left-0': isNavOpen() }"
 >
   <div class="flex items-center justify-center">
     <img class="h-32 w-32 rounded-full" src="assets/user1.png" alt="" />
@@ -15,6 +17,7 @@
         routerLinkActive="bg-sky-700"
         [routerLinkActiveOptions]="{ exact: true }"
         class="block px-4 py-2 hover:bg-sky-700 transition-[background-color] duration-100 focus:bg-sky-700"
+        (click)="closeSidebar()"
         >Levels And Phase</a
       >
     </li>
@@ -24,6 +27,7 @@
         routerLinkActive="bg-sky-700"
         [routerLinkActiveOptions]="{ exact: true }"
         class="block py-2 hover:bg-sky-700 focus:bg-sky-700"
+        (click)="closeSidebar()"
         >Edit Profile</a
       >
     </li>
