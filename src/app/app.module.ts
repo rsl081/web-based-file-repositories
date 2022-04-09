@@ -8,7 +8,7 @@ import { UserModule } from './user/user.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FacultyModule } from './faculty/faculty.module';
-
+import { AccreditorModule } from './accreditor/accreditor.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { FacultyModule } from './faculty/faculty.module';
     AdminModule,
     UserModule,
     FacultyModule,
+    AccreditorModule,
     BrowserAnimationsModule,
   ],
   providers: [],

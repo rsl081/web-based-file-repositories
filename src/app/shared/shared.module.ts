@@ -6,6 +6,7 @@ import { DashboardCardComponent } from './dashboard-card/dashboard-card.componen
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { NavComponent } from './nav/nav.component';
+import { DashboardDialogComponent } from './dashboard-dialog/dashboard-dialog.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NavComponent } from './nav/nav.component';
     DashboardCardComponent,
     DashboardAddCardComponent,
     BreadcrumbComponent,
-    NavComponent
+    NavComponent,
+    DashboardDialogComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { NavComponent } from './nav/nav.component';
     DashboardAddCardComponent,
     DashboardCardComponent,
     BreadcrumbComponent,
-    NavComponent
+    NavComponent,
+    DashboardDialogComponent,
   ]
 })
 export class SharedModule { }

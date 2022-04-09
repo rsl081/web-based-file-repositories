@@ -1,8 +1,16 @@
 <div class="bg-gray-50 min-h-screen">
+
   <app-nav [navDisplayName]="userName"></app-nav>
+
+  <!--Came from the shared folder -->
+  <app-dashboard-dialog></app-dashboard-dialog>
+
   <div class="relative flex gap-3 pr-3">
+
     <app-admin-sidebar></app-admin-sidebar>
+
     <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min ml-64 z-0">
+      
       <!-- 3 cards -->
       <div class="grid lg:grid-cols-3 m-8">
         <div
@@ -40,7 +48,10 @@
           <p class="mb-4 text-2xl font-bold text-black text-center">3</p>
         </div>
       </div>
+
       <router-outlet></router-outlet>
+
     </main>
+
   </div>
 </div>
