@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
 function nativeWindow() : any {
-   // return the global native browser window object
-   return window.innerWidth;
+  // return the global native browser window object
+  return window.innerWidth;
 }
 
 @Injectable({
