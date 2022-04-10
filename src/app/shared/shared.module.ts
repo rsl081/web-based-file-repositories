@@ -17,7 +17,7 @@ import { DashboardDialogComponent } from './dashboard-dialog/dashboard-dialog.co
     DashboardAddCardComponent,
     BreadcrumbComponent,
     NavComponent,
-    HamburgerMenuComponent
+    HamburgerMenuComponent,
     DashboardDialogComponent
   ],
   imports: [
