@@ -1,4 +1,4 @@
-<div class="bg-gray-50 min-h-screen">
+<div class="bg-gray-50 min-h-screen relative">
   <!-- overlay when the sidebar is open in mobile view -->
   <div
     *ngIf="isNavOpened"
@@ -6,12 +6,13 @@
   ></div>
   <app-nav [navDisplayName]="userName"></app-nav>
   <!--Came from the shared folder -->
-  <!-- <app-dashboard-dialog></app-dashboard-dialog> -->
+
   <div class="relative flex gap-3 pr-3">
     <app-admin-sidebar></app-admin-sidebar>
     <!-- if the overlay is active, any pointer events will be disabled in main -->
+    <app-dashboard-dialog></app-dashboard-dialog>
     <main
-      class="flex-1 grid grid-cols-1 gap-3 auto-rows-min ml-0 sm:ml-64 z-0"
+      class="flex-1 grid grid-cols-1 gap-3 auto-rows-min ml-0 sm:ml-64 z-0 relative"
       [ngClass]="{ 'pointer-events-none select-none': isNavOpened }"
     >
       <!-- 3 cards -->
@@ -52,6 +53,7 @@
         </div>
       </div>
       <router-outlet></router-outlet>
+
     </main>
   </div>
 </div>
