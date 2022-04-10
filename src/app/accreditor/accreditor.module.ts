@@ -4,12 +4,20 @@ import { CommonModule } from '@angular/common';
 import { AccreditorRoutingModule } from './accreditor-routing.module';
 import { AccreHomeComponent } from './accre-home/accre-home.component';
 import { AccreDashboardComponent } from './accre-dashboard/accre-dashboard.component';
+import { AccreSidebarComponent } from './accre-sidebar/accre-sidebar.component';
+import { AccreFilesComponent } from './accre-files/accre-files.component';
+import { AccreFileSearchBarComponent } from './accre-files/accre-file-search-bar/accre-file-search-bar.component';
+import { AccreFileTableComponent } from './accre-files/accre-file-table/accre-file-table.component';
 
 
 @NgModule({
   declarations: [
     AccreHomeComponent,
-    AccreDashboardComponent
+    AccreDashboardComponent,
+    AccreSidebarComponent,
+    AccreFilesComponent,
+    AccreFileSearchBarComponent,
+    AccreFileTableComponent
   ],
   imports: [
     CommonModule,
