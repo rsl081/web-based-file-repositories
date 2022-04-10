@@ -15,6 +15,8 @@ import { FacultyFilesComponent } from './faculty-files/faculty-files.component';
 import { FacultyFileSearchBarComponent } from './faculty-files/faculty-file-search-bar/faculty-file-search-bar.component';
 import { FacultyFileTableComponent } from './faculty-files/faculty-file-table/faculty-file-table.component';
 import { FacultyParametersComponent } from './faculty-parameters/faculty-parameters.component';
+import { NavigationService } from '../shared/navigation.service';
+import { ViewportService } from '../shared/viewport.service';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { FacultyParametersComponent } from './faculty-parameters/faculty-paramet
     CommonModule,
     FacultyRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [NavigationService, ViewportService]
 })
 export class FacultyModule { }

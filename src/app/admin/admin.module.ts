@@ -17,6 +17,8 @@ import { AdminAreasComponent } from './admin-areas/admin-areas.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { SharedModule } from '../shared/shared.module';
 import { AdminParametersComponent } from './admin-parameters/admin-parameters.component';
+import { NavigationService } from '../shared/navigation.service';
+import { ViewportService } from '../shared/viewport.service';
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import { AdminParametersComponent } from './admin-parameters/admin-parameters.co
     AdminRoutingModule,
     SharedModule,
   ],
+  providers: [NavigationService, ViewportService],
   exports: [
     AdminHomeComponent
   ],
