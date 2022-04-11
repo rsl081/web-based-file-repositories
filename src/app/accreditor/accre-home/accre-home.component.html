@@ -1,5 +1,7 @@
        <app-accre-sidebar></app-accre-sidebar>
+       <app-nav [navDisplayName]="userName"></app-nav>
         <main class="flex-1 grid grid-cols-1 gap-3 auto-rows-min ml-64 z-0">
-            <app-accre-files></app-accre-files>
+            <!-- <app-accre-files></app-accre-files> -->
+            <app-accre-area></app-accre-area>
             <router-outlet></router-outlet>
         </main>

@@ -9,6 +9,8 @@ import { AccreSidebarComponent } from './accre-sidebar/accre-sidebar.component';
 import { AccreFilesComponent } from './accre-files/accre-files.component';
 import { AccreFileSearchBarComponent } from './accre-files/accre-file-search-bar/accre-file-search-bar.component';
 import { AccreFileTableComponent } from './accre-files/accre-file-table/accre-file-table.component';
+import { AccreAreaComponent } from './accre-area/accre-area.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -19,11 +21,13 @@ import { AccreFileTableComponent } from './accre-files/accre-file-table/accre-fi
     AccreSidebarComponent,
     AccreFilesComponent,
     AccreFileSearchBarComponent,
-    AccreFileTableComponent
+    AccreFileTableComponent,
+    AccreAreaComponent
   ],
   imports: [
     CommonModule,
-    AccreditorRoutingModule
+    AccreditorRoutingModule,
+    SharedModule
   ]
 })
 export class AccreditorModule { }

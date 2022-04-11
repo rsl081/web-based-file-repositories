@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccreHomeComponent implements OnInit {
 
+  userName='Hi, Accreditor'
   constructor() { }
 
   ngOnInit(): void {
