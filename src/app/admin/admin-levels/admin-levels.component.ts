@@ -6,6 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./admin-levels.component.css'],
 })
 export class AdminLevelsComponent implements OnInit {
+
+  showDialog = false
   // dummy data only - might be changed once the backend is ready
   levels = [
     {
@@ -64,8 +66,8 @@ export class AdminLevelsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // onDeleteItem() {
-  //   this.levels.splice(index,1);
-  // }
+  toggleAddLevelDialog(){
+    this.showDialog = !this.showDialog;
+  }
 
 }

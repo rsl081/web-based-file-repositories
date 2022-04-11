@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { NavigationService } from 'src/app/shared/navigation.service';
 import { ViewportService } from 'src/app/shared/viewport.service';
 
@@ -12,18 +12,27 @@ export class FacultyHomeComponent implements OnInit {
   isNavOpened = false;
   userName = 'Hi, Faculty'
 
-  constructor(private navigationService: NavigationService, private viewportService: ViewportService) {
+  constructor(private navigationService: NavigationService, 
+    private viewportService: ViewportService, 
+    private renderer: Renderer2, 
+    private elRef: ElementRef) {
+    this.registerCustomEvents();
+  }
+
+  ngOnInit(): void {}
+
+  registerCustomEvents(){
     // notify this component once the sidebar is opened or closed
     this.navigationService.navOpened.subscribe(()=>{
       this.isNavOpened = true;
+      this.disableScrollbar();
     })
 
     this.navigationService.navClosed.subscribe(()=>{
       this.isNavOpened = false;
+      this.enableScrollbar();
     })
   }
-
-  ngOnInit(): void {}
 
   // event listener for screen resize
   @HostListener('window:resize')
@@ -36,5 +45,13 @@ export class FacultyHomeComponent implements OnInit {
         // this will closed the overlay
       }
     }
+  }
+
+  disableScrollbar(){
+    this.renderer.setStyle(this.elRef.nativeElement.closest('body'), 'overflow', 'hidden');
+  }
+
+  enableScrollbar(){
+    this.renderer.setStyle(this.elRef.nativeElement.closest('body'), 'overflow', 'unset');
   }
 }
