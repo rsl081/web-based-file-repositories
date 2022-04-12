@@ -19,6 +19,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AdminParametersComponent } from './admin-parameters/admin-parameters.component';
 import { NavigationService } from '../shared/navigation.service';
 import { ViewportService } from '../shared/viewport.service';
+import { OverlayService } from '../shared/overlay.service';
 
 
 @NgModule({
@@ -42,7 +43,7 @@ import { ViewportService } from '../shared/viewport.service';
     AdminRoutingModule,
     SharedModule,
   ],
-  providers: [NavigationService, ViewportService],
+  providers: [NavigationService, ViewportService, OverlayService],
   exports: [
     AdminHomeComponent
   ],

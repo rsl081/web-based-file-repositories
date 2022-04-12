@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-add-card',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardAddCardComponent implements OnInit {
 
+  @Output() cardClicked = new EventEmitter<void>();
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCardClick(){
+    this.cardClicked.emit();
   }
 
 }
