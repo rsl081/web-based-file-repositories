@@ -9,8 +9,10 @@ import { ViewportService } from 'src/app/shared/viewport.service';
 })
 export class AccreHomeComponent implements OnInit {
 
+  userName = 'Hi, Accreditor'
+
   isNavOpened = false;
-  userName = 'Hi, Accreditor';
+
   
   constructor(private navigationService: NavigationService, private viewportService: ViewportService) {
     // notify this component once the sidebar is opened or closed
@@ -22,6 +24,7 @@ export class AccreHomeComponent implements OnInit {
       this.isNavOpened = false;
     })
    }
+
 
   ngOnInit(): void {
   }

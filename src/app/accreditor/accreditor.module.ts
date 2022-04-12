@@ -30,5 +30,6 @@ import { ViewportService } from '../shared/viewport.service';
     SharedModule
   ],
   providers: [NavigationService, ViewportService],
+
 })
 export class AccreditorModule { }
