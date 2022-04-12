@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardDialogComponent implements OnInit {
 
+  open = true;
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  closeDialog(){
+    this.open = !this.open;
   }
 
 }

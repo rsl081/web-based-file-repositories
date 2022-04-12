@@ -11,6 +11,9 @@ import { AccreFileSearchBarComponent } from './accre-files/accre-file-search-bar
 import { AccreFileTableComponent } from './accre-files/accre-file-table/accre-file-table.component';
 import { AccreAreaComponent } from './accre-area/accre-area.component';
 import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
+import { NavigationService } from '../shared/navigation.service';
+import { ViewportService } from '../shared/viewport.service';
 
 
 @NgModule({
@@ -28,6 +31,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     AccreditorRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [NavigationService, ViewportService],
+
 })
 export class AccreditorModule { }
