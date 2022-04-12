@@ -5,7 +5,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 })
 export class NavigationService {
 
-   // cross component communication
+  // cross component communication
   navOpened = new EventEmitter<void>();
   navClosed = new EventEmitter<void>();
 
