@@ -9,8 +9,8 @@ import { ViewportService } from 'src/app/shared/viewport.service';
 })
 export class AccreHomeComponent implements OnInit {
 
-  userName = 'Hi, Accreditor'
 
+  userName='Hi, Accreditor'
   isNavOpened = false;
 
   
@@ -24,7 +24,6 @@ export class AccreHomeComponent implements OnInit {
       this.isNavOpened = false;
     })
    }
-
 
   ngOnInit(): void {
   }
