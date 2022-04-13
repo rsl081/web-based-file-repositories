@@ -8,21 +8,20 @@ import { OverlayService } from '../overlay.service';
 })
 export class DashboardDialogComponent implements OnInit{
 
+  @Input() dialogTitle?: string;
   @Input() inputPlaceholder?: string;
   @Output() dialogClosed = new EventEmitter<void>();
-  isDialogOpen = true;
   
   constructor(private overlayService: OverlayService) { }
 
   ngOnInit(): void {
-    // notify home component that the overlay is active once this component is initialized
+    // notify home component that the overlay is active 
     this.overlayService.showOverlay.emit();
   }
 
   closeDialog(){
-    this.isDialogOpen = !this.isDialogOpen;
     this.dialogClosed.emit();
+    // notify home component that the overlay is inactive
     this.overlayService.hideOverlay.emit();
   }
-
 }

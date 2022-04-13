@@ -1,20 +1,21 @@
-<app-overlay *ngIf="isDialogOpen" zIndex="20"></app-overlay>
+<app-overlay zIndex="20"></app-overlay>
 <div
-  class="bg-white rounded-lg shadow-lg flex flex-col justify-center items-center z-40 fixed w-11/12 sm:w-1/2 lg:w-1/4 top-[52%] left-[50%] -translate-x-1/2 -translate-y-1/2 p-4 gap-4"
+  class="bg-white rounded-lg shadow-lg flex flex-col justify-center items-center z-40 fixed w-11/12 sm:w-1/2 lg:w-1/3 xl:w-1/4 top-0 left-0 right-0 bottom-0 m-auto h-min p-4 gap-4"
 >
+  <h2 class="font-bold text-xl text-gray-600">{{ dialogTitle }}</h2>
   <input
-    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    class="bg-gray-100 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight border-2 border-transparent focus:outline-none focus:border-sky-800"
     type="text"
     [placeholder]="inputPlaceholder"
   />
   <div class="flex space-x-4 justify-center">
     <button
-      class="w-36 rounded-full relative overflow-hidden inline-flex group items-center justify-center bg-sky-800 text-white p-2 active:shadow-none shadow-lg"
+      class="min-w-[9rem] rounded-full bg-sky-800 text-white p-2 active:shadow-none shadow-lg"
     >
       Add
     </button>
     <button
-      class="w-36 rounded-full relative overflow-hidden inline-flex group items-center justify-center bg-sky-800 text-white p-2 active:shadow-none shadow-lg"
+      class="min-w-[9rem] rounded-full bg-sky-800 text-white p-2 active:shadow-none shadow-lg"
       (click)="closeDialog()"
     >
       Cancel
