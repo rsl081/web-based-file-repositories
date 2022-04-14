@@ -14,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
 
 import { NavigationService } from '../shared/navigation.service';
 import { ViewportService } from '../shared/viewport.service';
+import { AccreParametersComponent } from './accre-parameters/accre-parameters.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ViewportService } from '../shared/viewport.service';
     AccreFilesComponent,
     AccreFileSearchBarComponent,
     AccreFileTableComponent,
-    AccreAreaComponent
+    AccreAreaComponent,
+    AccreParametersComponent
   ],
   imports: [
     CommonModule,
