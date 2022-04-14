@@ -27,7 +27,7 @@ import { AccreParametersComponent } from './accre-parameters/accre-parameters.co
     AccreFileSearchBarComponent,
     AccreFileTableComponent,
     AccreAreaComponent,
-    AccreParametersComponent
+    AccreParametersComponent,
   ],
   imports: [
     CommonModule,
