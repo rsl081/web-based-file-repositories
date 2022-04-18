@@ -11,7 +11,7 @@
     *ngFor="let parameter of parameters; let i = index"
     [card]="parameter"
     [index]="i"
-    [levels]="parameters"
+    [sourceArray]="parameters"
     [nextRoute]="'files'"
   ></app-dashboard-card>
 </div>

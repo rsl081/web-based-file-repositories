@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class DashboardCardComponent implements OnInit {
   @Input() card!: { type: string; cardLabel: string; btnLabel: string };
   @Input() index = 0;
-  @Input() levels = [{}]
+  @Input() sourceArray = [{}]
   @Input() nextRoute?: string;
 
   // ActivatedRoute simply injects the currently active route
@@ -23,7 +23,7 @@ export class DashboardCardComponent implements OnInit {
   }
 
   onDeleteItem() {
-    this.levels.splice(this.index, 1);
+    this.sourceArray.splice(this.index, 1);
   }
 
 }
