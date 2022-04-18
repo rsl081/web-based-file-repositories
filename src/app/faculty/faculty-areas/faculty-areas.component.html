@@ -5,13 +5,14 @@
 >
   <!-- Came from the shared folder -->
   <!-- <app-dashboard-add-card></app-dashboard-add-card> -->
-  
+
   <!-- Came from the shared folder -->
   <app-dashboard-card
     *ngFor="let area of areas; let i = index"
     [card]="area"
     [index]="i"
     [levels]="areas"
+    [nextRoute]="'parameter'"
   ></app-dashboard-card>
 </div>
 <router-outlet #parameterOutlet="outlet"></router-outlet>
