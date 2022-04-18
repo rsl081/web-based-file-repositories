@@ -6,7 +6,7 @@
   <svg
     class="h-5 w-5 place-self-end fill-gray-600 cursor-pointer"
     viewBox="0 0 20 20"
-    (click)="(onDeleteItem())"
+    (click)="onDeleteItem()"
   >
     <path
       fill-rule="evenodd"
@@ -20,6 +20,7 @@
       {{ card.cardLabel }}
     </h2>
     <button
+      (click)="onClick()"
       class="w-full max-w-xs rounded-full relative overflow-hidden inline-flex group items-center justify-center mt-4 bg-sky-800 text-white px-10 py-2 active:shadow-none shadow-lg"
     >
       <!-- hover effect -->
