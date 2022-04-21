@@ -61,7 +61,7 @@ const routes: Routes = [
         component: AdminSummaryGenComponent,
       },
       {
-        path: 'admin/change-pass',
+        path: 'change-pass',
         component: AdminChangePassComponent,
       },
     ],
